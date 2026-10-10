@@ -7,7 +7,14 @@ import { DesignationModel } from '../../models/designation_model.js';
 async function getSuggestions(model: any, query: string, paths: string[] = ['name', 'aliases']) {
     if (!query) return [];
 
-    const regex = new RegExp(query, 'i');
+    // Escape special regex characters in the query first
+    const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    
+    // Create a fuzzy regex by injecting .* between every character
+    // Example: "Krn" becomes /K.*r.*n/i which matches "Karnataka"
+    const fuzzyString = escapedQuery.split('').join('.*');
+    const regex = new RegExp(fuzzyString, 'i');
+
     const orClauses = paths.map(path => ({ [path]: regex }));
 
     return model.find({ $or: orClauses }).limit(10).lean();
