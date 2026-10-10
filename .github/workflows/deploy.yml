@@ -37,6 +37,13 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
+            # Source bash_profile and nvm if they exist to get npm and pm2 in PATH
+            source ~/.bash_profile || true
+            source ~/.bashrc || true
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            export PATH=$PATH:/usr/local/bin:/usr/bin:/bin
+            
             # Navigate to the target directory
             cd ${{ secrets.SERVER_TARGET_PATH }}
             

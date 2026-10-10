@@ -4,6 +4,7 @@ module.exports = {
       name: "acrapath_server",
       script: "npm",
       args: "run start",
+      exec_mode: "fork",
       env: {
         NODE_ENV: "production",
       },
