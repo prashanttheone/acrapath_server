@@ -1,6 +1,6 @@
 import type { Request, Response } from 'express';
-import { JobPostModel } from '../models/job_post_model.js';
-import { UserModel } from '../models/user_model.js';
+import { JobPostModel } from '../../models/job_post_model.js';
+import { UserModel } from '../../models/user_model.js';
 import { updateAutocompleteDictionaries } from '../../services/dictionary_service.js';
 
 // Create a new job post

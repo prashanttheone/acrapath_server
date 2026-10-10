@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
-import { LocationModel } from '../models/location_model.js';
-import { SkillModel } from '../models/skill_model.js';
-import { DesignationModel } from '../models/designation_model.js';
+import { LocationModel } from '../../models/location_model.js';
+import { SkillModel } from '../../models/skill_model.js';
+import { DesignationModel } from '../../models/designation_model.js';
 
 // Reusable function to perform Atlas Search autocomplete aggregation
 async function getSuggestions(model: any, query: string, paths: string[] = ['name', 'aliases']) {

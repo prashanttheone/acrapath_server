@@ -2,10 +2,10 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
-import { JobPostModel } from './src/controllers/models/job_post_model.js';
-import { LocationModel } from './src/controllers/models/location_model.js';
-import { SkillModel } from './src/controllers/models/skill_model.js';
-import { DesignationModel } from './src/controllers/models/designation_model.js';
+import { JobPostModel } from './src/models/job_post_model.js';
+import { LocationModel } from './src/models/location_model.js';
+import { SkillModel } from './src/models/skill_model.js';
+import { DesignationModel } from './src/models/designation_model.js';
 
 // Load environment variables
 dotenv.config();

@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { UserModel } from '../models/user_model.js';
+import { UserModel } from '../../models/user_model.js';
 
 export const register = async (req: Request, res: Response): Promise<any> => {
     try {

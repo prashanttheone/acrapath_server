@@ -1,6 +1,6 @@
-import { LocationModel } from '../controllers/models/location_model.js';
-import { SkillModel } from '../controllers/models/skill_model.js';
-import { DesignationModel } from '../controllers/models/designation_model.js';
+import { LocationModel } from '../models/location_model.js';
+import { SkillModel } from '../models/skill_model.js';
+import { DesignationModel } from '../models/designation_model.js';
 
 export const updateAutocompleteDictionaries = async (jobData: any): Promise<void> => {
     try {

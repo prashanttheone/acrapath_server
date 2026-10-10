@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { createJobPost, getJobs, getJobById } from '../jobs/job_controller.js';
+import { createJobPost, getJobs, getJobById } from '../controllers/jobs/job_controller.js';
 import { requireAuth } from '../middleware/auth.js';
 
 const router = Router();

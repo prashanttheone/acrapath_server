@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import connectDB from './db/connect.js';
-import apiRoutes from './src/controllers/routes/index.js';
+import apiRoutes from './src/routes/index.js';
 
 dotenv.config();
 
