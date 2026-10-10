@@ -1,6 +1,7 @@
 import type { Request, Response } from 'express';
 import { JobPostModel } from '../models/job_post_model.js';
 import { UserModel } from '../models/user_model.js';
+import { updateAutocompleteDictionaries } from '../../services/dictionary_service.js';
 
 // Create a new job post
 export const createJobPost = async (req: Request, res: Response): Promise<void> => {
@@ -26,7 +27,13 @@ export const createJobPost = async (req: Request, res: Response): Promise<void> 
         const newJob = new JobPostModel(jobData);
         await newJob.save();
 
-        // 3. Return success
+        // 3. Update autocomplete dictionaries in the background (fire-and-forget)
+        // We do NOT await this so the API responds instantly to the client.
+        updateAutocompleteDictionaries(jobData).catch(err => {
+            console.error('Background dictionary update failed:', err);
+        });
+
+        // 4. Return success
         res.status(201).json({
             message: 'Job post created successfully',
             job: newJob

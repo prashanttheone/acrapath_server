@@ -1,0 +1,1060 @@
+{
+  "jobs": [
+    {
+      "_id": "6aca6841820695ce9f490001",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "Acrapath",
+      "job_title": "React Developer",
+      "job_role": "Frontend Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Gurgaon, Haryana"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "50000",
+      "max_salary": "80000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Health Insurance",
+        "Joining Bonus"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "0",
+      "max_experience": "2",
+      "skills": [
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ],
+      "job_description": "Build responsive web interfaces, integrate REST APIs, and collaborate with product and design teams.",
+      "created": "2026-10-10T16:17:57.000Z",
+      "updated": "2026-10-10T16:17:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490002",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "NovaStack",
+      "job_title": "React Native Developer",
+      "job_role": "Mobile App Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Bengaluru, Karnataka"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "60000",
+      "max_salary": "110000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Health Insurance",
+        "Learning Budget"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "3",
+      "skills": [
+        "React Native",
+        "TypeScript",
+        "Redux Toolkit",
+        "REST APIs",
+        "Android"
+      ],
+      "job_description": "Develop and maintain cross-platform mobile applications, improve performance, and ship reliable releases.",
+      "created": "2026-10-10T09:04:57.000Z",
+      "updated": "2026-10-10T09:04:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490003",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "CloudMint Technologies",
+      "job_title": "Node.js Backend Engineer",
+      "job_role": "Backend Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Remote, India"
+      ],
+      "work_mode": [
+        "Remote"
+      ],
+      "min_salary": "70000",
+      "max_salary": "140000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Remote Work",
+        "Annual Bonus"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ],
+      "job_description": "Design scalable APIs, optimize database queries, and build secure backend services.",
+      "created": "2026-10-10T01:51:57.000Z",
+      "updated": "2026-10-10T01:51:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490004",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "PixelForge Labs",
+      "job_title": "Next.js Developer",
+      "job_role": "Full Stack Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Pune, Maharashtra"
+      ],
+      "work_mode": [
+        "Onsite"
+      ],
+      "min_salary": "55000",
+      "max_salary": "95000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Paid Leave",
+        "Health Insurance"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "3",
+      "skills": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "SEO"
+      ],
+      "job_description": "Deliver production-ready Next.js pages, improve Core Web Vitals, and integrate backend services.",
+      "created": "2026-10-09T18:38:57.000Z",
+      "updated": "2026-10-09T18:38:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490005",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "FlutterWave Systems",
+      "job_title": "Flutter Developer",
+      "job_role": "Mobile App Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Hyderabad, Telangana"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "60000",
+      "max_salary": "120000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Joining Bonus",
+        "Flexible Hours"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "4",
+      "skills": [
+        "Flutter",
+        "Dart",
+        "BLoC",
+        "Firebase",
+        "REST APIs"
+      ],
+      "job_description": "Build maintainable Flutter applications with robust state management, offline support, and automated testing.",
+      "created": "2026-10-09T12:25:57.000Z",
+      "updated": "2026-10-09T12:25:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490006",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "DataSprout",
+      "job_title": "Python Developer",
+      "job_role": "Backend Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Noida, Uttar Pradesh"
+      ],
+      "work_mode": [
+        "Onsite"
+      ],
+      "min_salary": "50000",
+      "max_salary": "90000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Health Insurance",
+        "Meal Allowance"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "3",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Pytest",
+        "Git"
+      ],
+      "job_description": "Implement Python services, write tested APIs, and improve reliability through profiling and code reviews.",
+      "created": "2026-10-09T05:12:57.000Z",
+      "updated": "2026-10-09T05:12:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490007",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "Aether AI",
+      "job_title": "AI/ML Engineer",
+      "job_role": "AI Engineer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Bengaluru, Karnataka"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "100000",
+      "max_salary": "200000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Learning Budget",
+        "Stock Options"
+      ],
+      "qualification": "Post-Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Machine Learning",
+        "Pandas",
+        "Model Evaluation"
+      ],
+      "job_description": "Train and evaluate machine learning models, build reproducible pipelines, and monitor model quality.",
+      "created": "2026-10-08T21:59:57.000Z",
+      "updated": "2026-10-08T21:59:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490008",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "VectorBridge",
+      "job_title": "LLM Application Engineer",
+      "job_role": "AI Engineer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Remote, India"
+      ],
+      "work_mode": [
+        "Remote"
+      ],
+      "min_salary": "90000",
+      "max_salary": "180000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Remote Work",
+        "Conference Budget"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "LLMs",
+        "RAG",
+        "LangChain",
+        "Vector Databases",
+        "Python"
+      ],
+      "job_description": "Build retrieval-augmented generation workflows, evaluate responses, and integrate LLM services into products.",
+      "created": "2026-10-08T14:46:57.000Z",
+      "updated": "2026-10-08T14:46:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490009",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "SecureLayer",
+      "job_title": "Cybersecurity Analyst",
+      "job_role": "Security Engineer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Chennai, Tamil Nadu"
+      ],
+      "work_mode": [
+        "Onsite"
+      ],
+      "min_salary": "55000",
+      "max_salary": "100000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Health Insurance",
+        "Certification Support"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "4",
+      "skills": [
+        "OWASP",
+        "SIEM",
+        "Linux",
+        "Network Security",
+        "Incident Response"
+      ],
+      "job_description": "Review security alerts, investigate vulnerabilities, and help teams remediate application risks.",
+      "created": "2026-10-08T07:33:57.000Z",
+      "updated": "2026-10-08T07:33:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f49000a",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "KubeOrbit",
+      "job_title": "DevOps Engineer",
+      "job_role": "DevOps Engineer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Mumbai, Maharashtra"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "80000",
+      "max_salary": "150000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Annual Bonus",
+        "Health Insurance"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Terraform",
+        "CI/CD"
+      ],
+      "job_description": "Automate deployments, maintain cloud infrastructure, and improve observability and recovery procedures.",
+      "created": "2026-10-08T01:20:57.000Z",
+      "updated": "2026-10-08T01:20:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f49000b",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "QueryCraft",
+      "job_title": "PostgreSQL Database Engineer",
+      "job_role": "Database Engineer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Remote, India"
+      ],
+      "work_mode": [
+        "Remote"
+      ],
+      "min_salary": "70000",
+      "max_salary": "130000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Remote Work",
+        "Flexible Hours"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "PostgreSQL",
+        "SQL",
+        "Indexing",
+        "Query Optimization",
+        "Backup Recovery"
+      ],
+      "job_description": "Tune queries, design schemas, and maintain dependable database backup and recovery practices.",
+      "created": "2026-10-07T18:07:57.000Z",
+      "updated": "2026-10-07T18:07:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f49000c",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "QualityNest",
+      "job_title": "QA Automation Engineer",
+      "job_role": "Quality Assurance Engineer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Jaipur, Rajasthan"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "45000",
+      "max_salary": "85000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Paid Leave",
+        "Performance Bonus"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "3",
+      "skills": [
+        "Playwright",
+        "JavaScript",
+        "API Testing",
+        "Postman",
+        "CI/CD"
+      ],
+      "job_description": "Create automated UI and API tests, triage defects, and improve release confidence.",
+      "created": "2026-10-07T10:54:57.000Z",
+      "updated": "2026-10-07T10:54:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f49000d",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "AppHarbor",
+      "job_title": "Android Developer",
+      "job_role": "Mobile App Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Kochi, Kerala"
+      ],
+      "work_mode": [
+        "Onsite"
+      ],
+      "min_salary": "55000",
+      "max_salary": "100000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Health Insurance",
+        "Relocation Assistance"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "4",
+      "skills": [
+        "Kotlin",
+        "Android SDK",
+        "Jetpack Compose",
+        "Room",
+        "Retrofit"
+      ],
+      "job_description": "Build Android features, improve app stability, and work with APIs and local persistence.",
+      "created": "2026-10-07T03:41:57.000Z",
+      "updated": "2026-10-07T03:41:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f49000e",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "SwiftPeak",
+      "job_title": "iOS Developer",
+      "job_role": "Mobile App Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Bengaluru, Karnataka"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "80000",
+      "max_salary": "160000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Stock Options",
+        "Learning Budget"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Core Data",
+        "XCTest"
+      ],
+      "job_description": "Develop polished iOS experiences, integrate services, and maintain app quality across releases.",
+      "created": "2026-10-06T21:28:57.000Z",
+      "updated": "2026-10-06T21:28:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f49000f",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "FinOrbit",
+      "job_title": "Java Spring Boot Developer",
+      "job_role": "Backend Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Gurgaon, Haryana"
+      ],
+      "work_mode": [
+        "Onsite"
+      ],
+      "min_salary": "70000",
+      "max_salary": "130000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Health Insurance",
+        "Annual Bonus"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "MySQL",
+        "Kafka"
+      ],
+      "job_description": "Build transactional backend services, write unit tests, and maintain service-to-service integrations.",
+      "created": "2026-10-06T14:15:57.000Z",
+      "updated": "2026-10-06T14:15:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490010",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "GraphGrid",
+      "job_title": "Software Engineer - Go",
+      "job_role": "Backend Developer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Remote, India"
+      ],
+      "work_mode": [
+        "Remote"
+      ],
+      "min_salary": "90000",
+      "max_salary": "170000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Remote Work",
+        "Home Office Budget"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "Go",
+        "gRPC",
+        "PostgreSQL",
+        "Redis",
+        "Distributed Systems"
+      ],
+      "job_description": "Implement efficient services and contribute to API design, observability, and performance improvements.",
+      "created": "2026-10-06T07:02:57.000Z",
+      "updated": "2026-10-06T07:02:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490011",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "InsightLoop",
+      "job_title": "Data Analyst",
+      "job_role": "Data Analytics",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Delhi, India"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "45000",
+      "max_salary": "85000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Meal Allowance",
+        "Health Insurance"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "0",
+      "max_experience": "3",
+      "skills": [
+        "SQL",
+        "Python",
+        "Power BI",
+        "Excel",
+        "Data Visualization"
+      ],
+      "job_description": "Analyze product and business datasets, create dashboards, and communicate actionable findings.",
+      "created": "2026-10-05T23:49:57.000Z",
+      "updated": "2026-10-05T23:49:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490012",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "Lakehouse Labs",
+      "job_title": "Data Engineer",
+      "job_role": "Data Engineering",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Pune, Maharashtra"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "80000",
+      "max_salary": "150000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Learning Budget",
+        "Annual Bonus"
+      ],
+      "qualification": "Post-Graduate",
+      "min_experience": "2",
+      "max_experience": "5",
+      "skills": [
+        "Python",
+        "Spark",
+        "Airflow",
+        "dbt",
+        "Data Warehousing"
+      ],
+      "job_description": "Develop reliable ingestion pipelines, validate data quality, and optimize warehouse workloads.",
+      "created": "2026-10-05T16:36:57.000Z",
+      "updated": "2026-10-05T16:36:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490013",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "Web3Foundry",
+      "job_title": "Blockchain Developer",
+      "job_role": "Blockchain Engineer",
+      "job_type": [
+        "Contract"
+      ],
+      "location": [
+        "Remote, India"
+      ],
+      "work_mode": [
+        "Remote"
+      ],
+      "min_salary": "100000",
+      "max_salary": "220000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Remote Work",
+        "Flexible Hours"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "2",
+      "max_experience": "6",
+      "skills": [
+        "Solidity",
+        "Ethereum",
+        "Hardhat",
+        "Ethers.js",
+        "Smart Contract Testing"
+      ],
+      "job_description": "Develop and test smart contracts, review security risks, and integrate blockchain features into applications.",
+      "created": "2026-10-05T10:23:57.000Z",
+      "updated": "2026-10-05T10:23:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490014",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "DesignCurrent",
+      "job_title": "UI/UX Designer",
+      "job_role": "Product Design",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Ahmedabad, Gujarat"
+      ],
+      "work_mode": [
+        "Onsite"
+      ],
+      "min_salary": "45000",
+      "max_salary": "90000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Creative Budget",
+        "Paid Leave"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "4",
+      "skills": [
+        "Figma",
+        "Wireframing",
+        "Prototyping",
+        "Design Systems",
+        "Usability Testing"
+      ],
+      "job_description": "Create user flows, prototypes, and accessible design systems in partnership with engineering and product teams.",
+      "created": "2026-10-05T03:10:57.000Z",
+      "updated": "2026-10-05T03:10:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490015",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "SprintWorks",
+      "job_title": "Technical Product Manager",
+      "job_role": "Product Management",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Mumbai, Maharashtra"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "100000",
+      "max_salary": "190000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Stock Options",
+        "Health Insurance"
+      ],
+      "qualification": "Post-Graduate",
+      "min_experience": "4",
+      "max_experience": "8",
+      "skills": [
+        "Product Roadmaps",
+        "Agile",
+        "Jira",
+        "Analytics",
+        "API Concepts"
+      ],
+      "job_description": "Translate customer needs into prioritized roadmaps, align stakeholders, and measure feature outcomes.",
+      "created": "2026-10-04T19:57:57.000Z",
+      "updated": "2026-10-04T19:57:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490016",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "EdgePilot",
+      "job_title": "Site Reliability Engineer",
+      "job_role": "SRE",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Remote, India"
+      ],
+      "work_mode": [
+        "Remote"
+      ],
+      "min_salary": "110000",
+      "max_salary": "210000",
+      "is_not_disclose": false,
+      "is_night_shift": true,
+      "perks": [
+        "Remote Work",
+        "On-call Allowance"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "3",
+      "max_experience": "7",
+      "skills": [
+        "Linux",
+        "Kubernetes",
+        "Prometheus",
+        "Grafana",
+        "Incident Management"
+      ],
+      "job_description": "Improve availability through monitoring, incident response, capacity planning, and reliability automation.",
+      "created": "2026-10-04T12:44:57.000Z",
+      "updated": "2026-10-04T12:44:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490017",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "CodeSpring",
+      "job_title": "Junior Software Developer",
+      "job_role": "Software Developer",
+      "job_type": [
+        "Full-time",
+        "Internship"
+      ],
+      "location": [
+        "Indore, Madhya Pradesh"
+      ],
+      "work_mode": [
+        "Onsite"
+      ],
+      "min_salary": "25000",
+      "max_salary": "45000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Mentorship",
+        "Training Allowance"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "0",
+      "max_experience": "1",
+      "skills": [
+        "JavaScript",
+        "Git",
+        "HTML",
+        "CSS",
+        "Problem Solving"
+      ],
+      "job_description": "Contribute to small product features, fix bugs, and learn engineering practices through code reviews.",
+      "created": "2026-10-04T05:31:57.000Z",
+      "updated": "2026-10-04T05:31:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490018",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "APIWorks",
+      "job_title": "API Integration Engineer",
+      "job_role": "Integration Engineer",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Noida, Uttar Pradesh"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "60000",
+      "max_salary": "110000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Health Insurance",
+        "Flexible Hours"
+      ],
+      "qualification": "Graduate",
+      "min_experience": "1",
+      "max_experience": "4",
+      "skills": [
+        "REST APIs",
+        "OAuth 2.0",
+        "Webhooks",
+        "Node.js",
+        "Postman"
+      ],
+      "job_description": "Integrate third-party services, implement secure authentication flows, and troubleshoot production API issues.",
+      "created": "2026-10-03T23:18:57.000Z",
+      "updated": "2026-10-03T23:18:57.000Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca6841820695ce9f490019",
+      "posted_by": {
+        "_id": "6aca22811c6f8011640fb345",
+        "full_name": "Prashant Kumar ",
+        "email": "praytoprashant@gmail.com"
+      },
+      "company_name": "VisionStack",
+      "job_title": "Engineering Lead - Full Stack",
+      "job_role": "Engineering Lead",
+      "job_type": [
+        "Full-time"
+      ],
+      "location": [
+        "Bengaluru, Karnataka"
+      ],
+      "work_mode": [
+        "Hybrid"
+      ],
+      "min_salary": "180000",
+      "max_salary": "300000",
+      "is_not_disclose": false,
+      "is_night_shift": false,
+      "perks": [
+        "Stock Options",
+        "Annual Bonus",
+        "Health Insurance"
+      ],
+      "qualification": "Post-Graduate",
+      "min_experience": "6",
+      "max_experience": "10",
+      "skills": [
+        "React",
+        "Node.js",
+        "System Design",
+        "PostgreSQL",
+        "Team Leadership"
+      ],
+      "job_description": "Lead architecture and delivery across frontend and backend systems, mentor engineers, and establish quality standards.",
+      "created": "2026-10-03T16:05:57.000Z",
+      "updated": "2026-10-03T16:05:57.000Z",
+      "__v": 0
+    }
+  ],
+  "currentPage": 1,
+  "totalPages": 1,
+  "totalJobs": 25,
+  "hasNextPage": false
+}
