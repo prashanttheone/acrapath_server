@@ -6,7 +6,7 @@ export interface IJobPost extends Document {
     job_title: string;
     job_role: string;
     job_type: string[];
-    location: string;
+    location: string[];
     work_mode: string[];
     min_salary: string;
     max_salary: string;
@@ -30,7 +30,7 @@ const jobPostSchema = new Schema<IJobPost>({
     job_title: { type: String, required: true },
     job_role: { type: String, required: true },
     job_type: { type: [String], default: [] },
-    location: { type: String, default: '' },
+    location: { type: [String], default: [] },
     work_mode: { type: [String], default: [] },
     min_salary: { type: String, default: '' },
     max_salary: { type: String, default: '' },
