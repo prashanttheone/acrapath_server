@@ -9,7 +9,7 @@ declare global {
     }
 }
 
-export const authenticateToken = (req: Request, res: Response, next: NextFunction): any => {
+export const requireAuth = (req: Request, res: Response, next: NextFunction): any => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
 
