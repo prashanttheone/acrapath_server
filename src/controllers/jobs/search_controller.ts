@@ -3,52 +3,14 @@ import { LocationModel } from '../../models/location_model.js';
 import { SkillModel } from '../../models/skill_model.js';
 import { DesignationModel } from '../../models/designation_model.js';
 
-// Reusable function to perform Atlas Search autocomplete aggregation
+// Reusable function to perform standard MongoDB regex search (no Atlas index required)
 async function getSuggestions(model: any, query: string, paths: string[] = ['name', 'aliases']) {
     if (!query) return [];
 
-    // The autocomplete operator in Atlas Search. 
-    // You need an index created in Atlas (usually named 'default' or a custom name).
-    // The fields 'name' and 'aliases' should be indexed with the 'autocomplete' data type.
-    
-    // We use a compound query to search across multiple fields (e.g. name and aliases)
-    const shouldClauses = paths.map(path => ({
-        autocomplete: {
-            query,
-            path,
-            fuzzy: {
-                maxEdits: 1,
-                prefixLength: 1
-            }
-        }
-    }));
+    const regex = new RegExp(query, 'i');
+    const orClauses = paths.map(path => ({ [path]: regex }));
 
-    return model.aggregate([
-        {
-            $search: {
-                // If your index is named something specific, add `index: 'index_name',`
-                compound: {
-                    should: shouldClauses,
-                    minimumShouldMatch: 1
-                }
-            }
-        },
-        {
-            $limit: 10
-        },
-        {
-            $project: {
-                _id: 1,
-                name: 1,
-                aliases: 1,
-                category: 1,
-                type: 1,
-                state: 1,
-                countryCode: 1,
-                score: { $meta: 'searchScore' }
-            }
-        }
-    ]);
+    return model.find({ $or: orClauses }).limit(10).lean();
 }
 
 export const suggestLocations = async (req: Request, res: Response): Promise<void> => {
@@ -62,24 +24,24 @@ export const suggestLocations = async (req: Request, res: Response): Promise<voi
     }
 };
 
-export const suggestSkills = async (req: Request, res: Response): Promise<void> => {
+export const suggestKeywords = async (req: Request, res: Response): Promise<void> => {
     try {
         const q = req.query.q as string || '';
-        const results = await getSuggestions(SkillModel, q);
-        res.status(200).json({ data: results });
+        
+        // Fetch from both collections concurrently
+        const [skills, designations] = await Promise.all([
+            getSuggestions(SkillModel, q),
+            getSuggestions(DesignationModel, q)
+        ]);
+        
+        // Combine, sort by search score descending, and limit to top 10
+        const combined = [...skills, ...designations]
+            .sort((a, b) => (b.score || 0) - (a.score || 0))
+            .slice(0, 10);
+            
+        res.status(200).json({ data: combined });
     } catch (error) {
-        console.error('Error suggesting skills:', error);
-        res.status(500).json({ error: 'Failed to fetch skill suggestions' });
-    }
-};
-
-export const suggestDesignations = async (req: Request, res: Response): Promise<void> => {
-    try {
-        const q = req.query.q as string || '';
-        const results = await getSuggestions(DesignationModel, q);
-        res.status(200).json({ data: results });
-    } catch (error) {
-        console.error('Error suggesting designations:', error);
-        res.status(500).json({ error: 'Failed to fetch designation suggestions' });
+        console.error('Error suggesting keywords:', error);
+        res.status(500).json({ error: 'Failed to fetch suggestions' });
     }
 };

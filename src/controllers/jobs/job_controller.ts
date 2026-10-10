@@ -55,14 +55,15 @@ export const getJobs = async (req: Request, res: Response): Promise<void> => {
         // Filtering
         const query: any = {};
 
-        // 1. Location (case-insensitive regex)
+        // 1. Location (multi-location support via array or single string)
         if (req.query.location) {
-            query.location = { $regex: req.query.location, $options: 'i' };
+            const locations = Array.isArray(req.query.location) 
+                ? req.query.location 
+                : [req.query.location];
+            query.location = { $in: locations.map(loc => new RegExp(String(loc).trim(), 'i')) };
         }
 
-        // 2. Experience (simple handling: exact match or logic can be expanded)
-        // Usually, min_experience and max_experience are stored as strings. 
-        // For simple filtering, we might do an exact match or use regex if they are strings like "0-2 years".
+        // 2. Experience (simple handling)
         if (req.query.experience) {
             query.$or = [
                 { min_experience: { $regex: req.query.experience, $options: 'i' } },
@@ -78,14 +79,23 @@ export const getJobs = async (req: Request, res: Response): Promise<void> => {
             ];
         }
 
-        // 4. Job Type
+        // 4. Job Type (multi-type support)
         if (req.query.job_type) {
-            query.job_type = { $in: [req.query.job_type] };
+            const types = Array.isArray(req.query.job_type) 
+                ? req.query.job_type 
+                : [req.query.job_type];
+            query.job_type = { $in: types.map(t => new RegExp(String(t).trim(), 'i')) };
         }
 
-        // 5. Skills
+        // 5. Skills (multi-skill support via array or comma-separated string)
         if (req.query.skills) {
-            query.skills = { $in: Array.isArray(req.query.skills) ? req.query.skills : [req.query.skills] };
+            let skillsArray: string[] = [];
+            if (Array.isArray(req.query.skills)) {
+                skillsArray = req.query.skills.map(String);
+            } else if (typeof req.query.skills === 'string') {
+                skillsArray = req.query.skills.split(',');
+            }
+            query.skills = { $in: skillsArray.map(s => new RegExp(s.trim(), 'i')) };
         }
 
         // Optional: Function, Industry - Assuming these could map to job_role or company_name
@@ -93,11 +103,44 @@ export const getJobs = async (req: Request, res: Response): Promise<void> => {
             query.job_role = { $regex: req.query.function, $options: 'i' };
         }
         
+        let activeQuery = query;
         // Count total matching jobs
-        const totalJobs = await JobPostModel.countDocuments(query);
+        let totalJobs = await JobPostModel.countDocuments(activeQuery);
+
+        // Fallback Logic: If 0 jobs found, loosen the search to an OR condition
+        // e.g., if a user searches for HTML skills IN Bengaluru and gets 0, 
+        // fallback to showing jobs that either need HTML OR are in Bengaluru.
+        if (totalJobs === 0) {
+            const looseConditions = [];
+            
+            if (activeQuery.location) {
+                looseConditions.push({ location: activeQuery.location });
+                delete activeQuery.location;
+            }
+            if (activeQuery.skills) {
+                looseConditions.push({ skills: activeQuery.skills });
+                delete activeQuery.skills;
+            }
+            if (activeQuery.job_role) {
+                looseConditions.push({ job_role: activeQuery.job_role });
+                delete activeQuery.job_role;
+            }
+
+            // Only attempt fallback if there are multiple constraints to loosen
+            if (looseConditions.length > 1) {
+                const fallbackQuery = { ...activeQuery };
+                fallbackQuery.$and = [{ $or: looseConditions }];
+                
+                const looseTotalJobs = await JobPostModel.countDocuments(fallbackQuery);
+                if (looseTotalJobs > 0) {
+                    activeQuery = fallbackQuery;
+                    totalJobs = looseTotalJobs;
+                }
+            }
+        }
 
         // Fetch paginated and filtered jobs
-        const jobs = await JobPostModel.find(query)
+        const jobs = await JobPostModel.find(activeQuery)
             .sort({ created: -1 }) // Newest first
             .skip(skip)
             .limit(limit)
