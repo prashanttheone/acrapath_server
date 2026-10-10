@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { suggestLocations, suggestSkills, suggestDesignations } from '../search_controller.js';
+import { suggestLocations, suggestSkills, suggestDesignations } from '../jobs/search_controller.js';
 
 const router = Router();
 
