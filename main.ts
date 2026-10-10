@@ -6,7 +6,7 @@ import apiRoutes from './src/controllers/routes/index.js';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3005;
+const PORT = Number(process.env.PORT) || 3005;
 
 app.use(express.json());
 app.use('/api', apiRoutes);
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 const startServer = async () => {
   await connectDB();
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
   });
 };
