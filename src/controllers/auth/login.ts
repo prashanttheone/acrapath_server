@@ -24,7 +24,7 @@ export const login = async (req: Request, res: Response): Promise<any> => {
             { expiresIn: '7d' }
         );
 
-        return res.status(200).json({ message: 'Login successful', userId: user._id, email: user.email, full_name: user.full_name, token });
+        return res.status(200).json({ message: 'Login successful', userId: user._id, email: user.email, full_name: user.full_name, is_recruiter: user.is_recruiter, token });
     } catch (error) {
         console.error('Login error:', error);
         return res.status(500).json({ error: 'Internal server error' });

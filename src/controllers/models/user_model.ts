@@ -5,6 +5,7 @@ export interface IUser extends Document {
     email: string;
     phone: string;
     password: string;
+    is_recruiter: boolean;
     created?: Date;
     updated?: Date;
 }
@@ -13,7 +14,8 @@ const userSchema = new Schema<IUser>({
     full_name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     phone: { type: String, required: true, unique: true },
-    password: { type: String, required: true }
+    password: { type: String, required: true },
+    is_recruiter: { type: Boolean, default: false }
 }, {
     timestamps: { createdAt: 'created', updatedAt: 'updated' }
 });
