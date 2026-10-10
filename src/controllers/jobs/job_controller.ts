@@ -103,7 +103,7 @@ export const getJobs = async (req: Request, res: Response): Promise<void> => {
             query.job_role = { $regex: req.query.function, $options: 'i' };
         }
         
-        let activeQuery = query;
+        let activeQuery = { ...query };
         // Count total matching jobs
         let totalJobs = await JobPostModel.countDocuments(activeQuery);
 
@@ -113,22 +113,19 @@ export const getJobs = async (req: Request, res: Response): Promise<void> => {
         if (totalJobs === 0) {
             const looseConditions = [];
             
-            if (activeQuery.location) {
-                looseConditions.push({ location: activeQuery.location });
-                delete activeQuery.location;
-            }
-            if (activeQuery.skills) {
-                looseConditions.push({ skills: activeQuery.skills });
-                delete activeQuery.skills;
-            }
-            if (activeQuery.job_role) {
-                looseConditions.push({ job_role: activeQuery.job_role });
-                delete activeQuery.job_role;
-            }
+            // Only extract these constraints if we intend to loosen them
+            if (activeQuery.location) looseConditions.push({ location: activeQuery.location });
+            if (activeQuery.skills) looseConditions.push({ skills: activeQuery.skills });
+            if (activeQuery.job_role) looseConditions.push({ job_role: activeQuery.job_role });
 
             // Only attempt fallback if there are multiple constraints to loosen
             if (looseConditions.length > 1) {
                 const fallbackQuery = { ...activeQuery };
+                // Remove the strict AND constraints from fallbackQuery
+                delete fallbackQuery.location;
+                delete fallbackQuery.skills;
+                delete fallbackQuery.job_role;
+
                 fallbackQuery.$and = [{ $or: looseConditions }];
                 
                 const looseTotalJobs = await JobPostModel.countDocuments(fallbackQuery);
