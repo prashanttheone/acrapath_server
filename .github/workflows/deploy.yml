@@ -3,7 +3,8 @@ name: Deploy Node.js Server
 on:
   push:
     branches:
-      - main # Triggers on push to main branch (adjust if needed)
+      - main
+      - icpl
 
 jobs:
   deploy:
