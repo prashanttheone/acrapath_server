@@ -1,6 +1,7 @@
 import type { Request, Response } from 'express';
 import mongoose from 'mongoose';
 import { OrderModel, generateOrderId, type IOrderItem } from '../../models/order_model.js';
+import { sendOrderCreatedNotification } from '../../services/fcm_service.js';
 
 /**
  * Helper to extract and normalize product items from the request body.
@@ -90,6 +91,22 @@ export const createOrder = async (req: Request, res: Response): Promise<void> =>
         });
 
         await newOrder.save();
+
+        // Trigger push notification to user with title & body (non-blocking)
+        const customTitle = req.body.notification_title || req.body.title || req.body.notificationTitle;
+        const customBody = req.body.notification_body || req.body.body || req.body.notificationBody;
+
+        sendOrderCreatedNotification({
+            userId: String(userId),
+            orderId: newOrder.order_id,
+            totalAmount: newOrder.total_amount,
+            customTitle,
+            customBody,
+            itemCount: items.length,
+            status: newOrder.status,
+        }).catch((notifError) => {
+            console.error('[Order] Failed to send push notification:', notifError);
+        });
 
         res.status(201).json({
             message: 'Order created successfully',
